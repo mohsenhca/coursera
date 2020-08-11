@@ -1,0 +1,29 @@
+ul {
+    text-align: left;
+    display: inline-block;
+}
+h1 {
+    color: red;
+}
+span.title {
+    color: #8B0000;
+    font-weight: bold;
+}
+span.studies {
+    font-style: italic;
+}
+a:hover{
+    background: #87CEFA;
+    font-weight: bold;
+}
+a:link, a:visited{
+    color: blue;
+}
+ul > li:nth-child(odd) {
+    background: #C0C0C0;
+    width: 600px;
+}
+ul > li:nth-child(even) {
+    background: #DCDCDC;
+    width: 600px;
+}
