@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-/*ul {
-    text-align: left;
-    display: inline-block;
-}*/
-
 h1 {
     color: black;
     text-align: center;
@@ -19,19 +14,14 @@ h3 {
     text-align: center;
 }
 
-span.title {
-    color: #8B0000;
-    font-weight: bold;
-}
-
-span.studies {
-    font-style: italic;
-}
-
 .ImageCenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.ImageRight {
+    display: block;
+    margin-left: auto;
 }
 
 
@@ -126,6 +116,49 @@ span.studies {
     font-weight: 600;
     font-size: 18px;
     padding: 0em 0em 1em 0em;
+}
+
+
+/* Lectures */
+.FluidMechanicsBox {
+    width: 100%;
+    padding: 25px;
+    background-color: #87CEFA;
+}
+.FluidMechanicsBox a {
+    text-decoration: none;
+    color: #000080;
+    font-size: 120%;
+}
+.AerodynamicsBox {
+    width: 100%;
+    padding: 25px;
+    background-color: #000080;
+}
+.AerodynamicsBox a {
+    text-decoration: none;
+    color: #87CEFA;
+    font-size: 120%;
+}
+.CFDBox {
+    width: 100%;
+    padding: 25px;
+    background-color: #4E4E4E;
+}
+.CFDBox a {
+    text-decoration: none;
+    color: #B5B5B5;
+    font-size: 120%;
+}
+.CAABox {
+    width: 100%;
+    padding: 25px;
+    background-color: #B5B5B5;
+}
+.CAABox a {
+    text-decoration: none;
+    color: #4E4E4E;
+    font-size: 120%;
 }
 
 
