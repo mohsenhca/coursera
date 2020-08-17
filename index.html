@@ -2,40 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- to specify the responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- This title is shown on the tab of the browser -->
     <title>Mohsen Hamedi</title>
     <!-- Setting CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- GoogleScholar icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
+
 <body>
-<!-- The id="top" is used to link the end of the page to this heading -->
-<h1 id="top">Welcome to My Webpage</h1>
-<div>
-    <!-- ALWAYS SPECIFY width AND height -->
-    <img src="MohsenHamedi.jpg" width="350" height="350">
-</div>
-<p>I am a Mechanical engineer, studying at Concordia University. Here is my education background:</p>
-<div>
-    <!-- ul stands for UnorderedList -->
-    <ul>
-        <li> <span class="title">Ph.D. Studies:</span> <span class="studies">Mechanical Engineering at Concordia University.</span> </li>
-        <li> <span class="title">M.A.Sc. Studies:</span>
-            <!-- ol stands for OrderedList -->
-            <ol>
-                <li> <span class="studies">Mechanical Engineering at Concordia University</span> </li>
-                <li> <span class="studies">Mechanical Engineering at Khaje Nasir Toosi University of Technology</span> </li>
-            </ol>
-        </li>
-        <li> <span class="title">B.Sc. Studies:</span> <span class="studies">Mechanical Engineering at Khaje Nasir Toosi University of Technology</span> </li>
-    </ul>
-</div>
-<div>
-    <!-- target="_blank" is to open the link in a new tab -->
-    Check out my <a href="https://www.facebook.com/mohsenhca" target="_blank" title="My Facebook Page">Facebook</a>, <a href="https://twitter.com/mohsenhca" target="_blank" title="My Twitter Account">Twitter</a>, and <a href="https://www.linkedin.com/in/mohsenhca/" target="_blank" title="My LinkedIn Profile">LinkedIn</a> pages.
-</div>
-<!-- &copy; is the copyright symbol -->
-<footer>&copy;Mohsen Hamedi, 2020.</footer>
-<!-- href="#top" refers to the id="top" on top of the page -->
-<p><a href="#top">Back to top</a></p>
+
+    <!-- Navigation Toolbar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="lectures.html">Lectures</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+    <h1>
+        Mohsen Hamedi
+    </h1>
+    <h3>
+        Ph.D. Student of Mechanical Engineering
+    </h3>
+    <h3>
+        Computational Aerodynamics Laboratory
+    </h3>
+    <h3>
+        Concordia University, Montréal, QC, Canada
+    </h3>
+    <img src="MohsenHamedi.jpg" width="350px" class="ImageCenter">
+
+
+    <!-- Education Background -->
+    <div class="LightGray">
+        <p class="title">Education Background:</p>
+        <table style="width: 100%;">
+            <tr>
+                <td style="font-style: italic;">(2019-present)</td><td>Doctor of Philosophy</td><td>Mechanical Engineering</td><td><a href="https://www.concordia.ca" target="_blank" style="color: #800000;">Concordia University</a></td><td style="font-weight: bold;">GPA: 4.3/4.3</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">(2017-2019)</td><td>Master of Applied Science</td><td>Mechanical Engineering</td><td><a href="https://www.concordia.ca" target="_blank" style="color: #8B0000;">Concordia University</a></td><td style="font-weight: bold;">GPA: 4.3/4.3</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">(2015-2017)</td><td>Master of Applied Science</td><td>Mechanical Engineering</td><td><a href="https://en.kntu.ac.ir" target="_blank" style="color: #0000CD;">K.N.Toosi University</a></td><td style="font-weight: bold;">GPA: 17.50/20</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">(2010-2015)</td><td>Bachelor of Science</td><td>Mechanical Engineering</td><td><a href="https://en.kntu.ac.ir" target="_blank" style="color: #0000CD;">K.N.Toosi University</a></td><td style="font-weight: bold;">GPA: 15.70/20</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Publications -->
+    <div class="DarkGray">
+        <p class="title">Publications:</p>
+        <table style="width: 100%;">
+            <tr>
+                <td style="font-style: italic;">2016</td><td><a href="https://www.sciencedirect.com/science/article/abs/pii/S2213138816300480" target="_blank">Exergoeconomic analysis and multi-objective Pareto optimization of the C3MR liquefaction process</a></td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">2016</td><td><a href="https://www.sciencedirect.com/science/article/abs/pii/S0920410516300419" target="_blank">A novel multi-hybrid model for estimating optimal viscosity correlations of Iranian crude oil</a></td>
+            </tr>
+            <tr>
+                <td style="font-style: italic;">2015</td><td><a href="https://www.sciencedirect.com/science/article/pii/S1875510015002814" target="_blank">Optimization of mixed refrigerant systems in low temperature applications by means of group method of data handling (GMDH)</a></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="LightGray">
+        <p class="title">Contact:</p>
+        <table style="width: 100%;">
+            <tr>
+                <td><a href="https://www.linkedin.com/in/mohsenhca/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 24px; color: blue"></i></a></td>
+                <td><a href="https://www.instagram.com/mohsenhca/" target="_blank"><i class="fa fa-instagram" style="font-size: 24px; color: black"></i></a></td>
+                <td><a href="https://www.twitter.com/mohsenhca/" target="_blank"><i class="fa fa-twitter-square" style="font-size: 24px; color: #00BFFF"></i></a></td>
+                <td><a href="https://www.facebook.com/mohsenhca/" target="_blank"><i class="fa fa-facebook-square" style="font-size: 24px; color: blue"></i></a></td>
+                <td><a href="https://scholar.google.ca/citations?user=EE7HRV0AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x" style="font-size: 24px;"></i></a></td>
+            </tr>
+        </table>
+        <i class="fa fa-envelope" style="font-size: 24px;"></i> mohsenhca@yahoo.com
+    </div>
+
+    <div style="text-align: center;">
+        &copy; Mohsen Hamedi
+    </div>
 </body>
 </html>
