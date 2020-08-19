@@ -160,6 +160,29 @@ h3 {
     color: #4E4E4E;
     font-size: 120%;
 }
+/* Tutorials: */
+.TutorialODEBox {
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    color: white;
+}
+.TutorialODEBox a {
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+.TutorialFluidsBox {
+    width: 100%;
+    padding: 25px;
+    background-color: #87CEFA;
+    color: white;
+}
+.TutorialFluidsBox a {
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
 
 
 
